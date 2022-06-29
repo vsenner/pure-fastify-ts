@@ -1,0 +1,30 @@
+{
+  "name": "pure-fastify-ts",
+  "version": "1.0.0",
+  "description": "Pure Fastify Starter from scratch (Typescript, ENV included)",
+  "bin": "./bin/cli.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && NODE_ENV=production node build/index.js",
+    "build": "rimraf ./build && tsc",
+    "dev": "NODE_ENV=development nodemon index.js"
+  },
+  "keywords": ["typescript", "fastify", "dotenv", "nodemon", "starter", "scratch"],
+  "author": "Vadim Popov <vadim.senner@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vsenner/pure-fastify-ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "fastify": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "nodemon": "^2.0.18",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
+}
