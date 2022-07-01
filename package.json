@@ -1,6 +1,6 @@
 {
   "name": "pure-fastify-ts",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Pure Fastify Starter from scratch (Typescript, ENV included)",
   "bin": "./bin/cli.js",
   "main": "index.js",
